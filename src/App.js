@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import Coin from "./Coin";
 
 class App extends React.Component {
   constructor(props) {
@@ -25,12 +26,26 @@ class App extends React.Component {
     ];
     return (
       <div className="App">
+        {/* <Coin
+          head={this.state.head}
+          tail={this.state.tail}
+          face={this.state.head}
+        /> */}
         {this.state.head === 0 && this.state.tail == 0 ? (
-          <img src="../src/img/flip_coin.png" alt="Head" />
+          <img
+            src="https://raw.githubusercontent.com/TheKetan2/coin-flipper/master/src/img/flip_coin.png"
+            alt="Head"
+          />
         ) : this.state.face === "Head" ? (
-          <img src="./img/dime-coin-head.jpg" alt="Head" />
+          <img
+            src="https://raw.githubusercontent.com/TheKetan2/coin-flipper/master/src/img/dime-coin-head.jpg"
+            alt="Head"
+          />
         ) : (
-          <img src="./img/dime-coin-tail.jpg" alt="Tail" />
+          <img
+            src="https://raw.githubusercontent.com/TheKetan2/coin-flipper/master/src/img/dime-coin-tail.jpg"
+            alt="Tail"
+          />
         )}
         <div>
           <button onClick={this.flipp}>Flip</button>
