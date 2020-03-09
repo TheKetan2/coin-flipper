@@ -4,4 +4,4 @@
 
 ### Live Demo:
 
-https://theketan2.github.io/coin-flipper
+https://theketan2.github.io/coin-flipper/
